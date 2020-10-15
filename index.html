@@ -10,7 +10,66 @@
 </head>
 <body>
     <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li> 
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+           </ul>
+           <section>
+           <div id="home">
+            <div id="pics" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="./images/pepperoni .jpg" class="d-block w-100" alt="..." height="200 px" width="200 px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/onion.jpeg" class="d-block w-100" alt="..." height="200 px" width="200 px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/mash.jpeg" class="d-block w-100" alt="..." height="200 px" width="200 px">
+                  </div>
+                </div>
+                <div id="odder">
+                    
 
+                </div>
+              </div>
+           </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p> we hhh</p>
+        </section>
+        <section id="contact">
+           <p> Contact Us</p>
+           <form>
+            <div class="form-group">
+              <label for="">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="">
+            </div>
+            <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+          <label for="exampleFormControlInput1">subject</label>
+          <input type="text" class="form-control" id="subject" placeholder="">
+        </div>
+        
+            <div class="form-group"><div class="form-group"></div>
+              <label for="exampleFormControlTextarea1">Your massage</label>
+              <textarea class="form-control" id="massage" rows="5"></textarea>
+            </div>
+          </form>
+        </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
