@@ -93,8 +93,9 @@ $(Document).ready(function () {
         $("select#crust1").val("");
         $("select#topping1").val("");
         $ ("select#size1").val("");
+        
+        
     });
-    $(".carousel").carousel({
-        interval: 2000
-    })
+  
+   
 })
