@@ -48,8 +48,8 @@
             <form id="type">
               <div class="form-group">
                 <label for="">choose your crust</label>
-                <select class="form-control" id="crust1">
-                  <option></option>  
+                 <select class="form-control" id="crust1"> 
+                  <option value=""></option>  
                   <option value="crispy">Crispy</option>
                   <option value`="stuff">Stuffed</option>
                   <option value="gulen">Gluten-free</option>
@@ -59,7 +59,7 @@
               <div class="form-group">
                 <label for="exampleFormControlSelect1">choose your toppings</label>
                 <select class="form-control" id="topping1">
-                  <option></option>
+                  <option value=""></option>
                   <option value="pepe">peperoni</option>
                   <option value="mash">mashroom</option>
                   <option value="onion">onion</option>
@@ -69,7 +69,7 @@
               <div class="form-group">
                 <label for="exampleFormControlSelect1">pick your size</label>
                 <select class="form-control" id="size1">
-                  <option></option>
+                  <option value=""></option>
                   <option value="small">small</option>
                   <option value="medium">medium</option>
                   <option value="large">large</option>
@@ -83,40 +83,76 @@
         </div>
         
         <div class="col-md-6">
-          <div id="manu">
+          
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
+                  <th scope="col">Toppings</th>
+                  <th scope="col">size</th>
+                  <th scope="col">total</th>
+                 
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                </tr>
+              <tbody id="table">
+                
               </tbody>
             </table>
-          </div>
+          
         </div>
           </div>
+ <p class="delivery-cost hidden">
+                                Delivery: Ksh. <span id="delivery-amount"></span>
+                            </p>
+                            <p class="Amount2 hidden">
+                                Total: Ksh. <span id="Amount2"></span>
+                            </p>
+                            <br /><br />
+                            <button class="btn btn-primary hidden" id="Procced">Proceed</button>
+                        </div>
+                    </div>
+                    <div class="checkout-options hidden">
+                        <h3>Checkout Form</h3>
+                        <form id="proceed-forms">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter Your Name"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Delivery Option</label>
+                                <select class="form-control" id="option1" required>
+                                    <option value="">...</option>
+                                    <option value="deliver">Deliver</option>
+                                    <option value="collect">Collect</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="location hidden">
+                        <form class="location-form">
+                            <h3>Enter Location</h3>
+                            <div class="form-group">
+                                <label>Estate</label>
+                                <input type="text" class="form-control" id="estate" placeholder="Enter Your location"
+                                    required />
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">House Number</label>
+                                <input type="text" class="form-control" id="house-number" placeholder="Enter Your House Numper"
+                                    required />
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
     </section>
