@@ -12,6 +12,7 @@
 
 <body>
   <div class="container-fluid">
+    <nav>
     <ul class="nav justify-content-center">
       <li class="nav-item">
         <a class="nav-link active" href="#">Home</a>
@@ -20,11 +21,12 @@
         <a class="nav-link active" href="#">About us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Menu</a>
+        <a class="nav-link active" href="#">Menu</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link active" href="#">Contact Us</a>
     </ul>
+  </nav>
     <section>
       <div id="home">
         <div class="row " style="padding-top: 20%; padding-bottom: 10%;padding-left: 4%;">
@@ -103,11 +105,11 @@
         <p class="delivery-cost hidden">
           Delivery: Ksh. <span id="delivery-amount"></span>
         </p>
-        <p class="Amount2 hidden">
+        <p class="option1" hidden">
           Total: Ksh. <span id="Amount2"></span>
         </p>
         <br /><br />
-        <button class="btn btn-primary hidden" id="Procced">Proceed</button>
+        <button class="btn btn-primary hidden  "  style="display: none;" id="Procced">Proceed</button>
       </div>
   </div>
   <div class="checkout-options hidden">
@@ -115,11 +117,11 @@
     <form id="proceed-forms">
       <div class="form-group">
         <label>Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required />
+        <input type="text" class="form-control" id="name1" placeholder="Enter Your Name" required />
       </div>
       <div class="form-group">
         <label for="exampleFormControlSelect1">Delivery Option</label>
-        <select class="form-control" id="option1" required>
+        <select class="form-control" id=option1"" required>
           <option value="">...</option>
           <option value="deliver">Deliver</option>
           <option value="collect">Collect</option>

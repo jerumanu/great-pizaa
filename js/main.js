@@ -94,6 +94,7 @@ $(document).ready(function () {
 
 	$("#type").submit(function (event) {
 		event.preventDefault();
+		event.stopPropagation();
 		var crust2 = $("#crust1").val();
 		var topping2 = $("#topping1").val();
 		var size2 = $("#size1").val();
@@ -129,9 +130,9 @@ $(document).ready(function () {
 			"</td>" +
 			"</tr>"
 		);
-		console.log('hkibibnvu')
-		console.log(crust2)
-		console.log('jgv ohkbugj')
+		// console.log('hkibibnvu')
+		// console.log(crust2)
+		// console.log('jgv ohkbugj')
 
 		$("#table").append("");
 		if (newOder.length > 0) {
@@ -161,12 +162,14 @@ $(document).ready(function () {
 		$(".checkout-options").show();
 	});
 
-	$("#proceed-form").submit(function (event) {
+	$("#proceed-forms").submit(function(event) {
 		event.preventDefault();
-		var name = $("#name").val();
+		event.stopPropagation()
+		var name = $("#name1").val();
 		var deliveryOption = $("#option1").val();
-		customerName = name;
-		$("#name").val("");
+		console.log(name)
+		// customerName = name;
+		$("#name1").val("");
 		$("#option1").val("");
 		$(".checkout-options").hide();
 		$("#Procced").hide();
@@ -175,16 +178,16 @@ $(document).ready(function () {
 			$(".location").show();
 			$(".delivery-cost").show();
 			$("#Amount2").empty();
-			$("#delivery-amount").append(300);
-			totalAmount += 300;
+			$("#delivery-amount").append(200);
+			total +=200;
 			$("#Amount2").empty();
 			$("#Amount2").empty();
-			$("#Amount2").append(totalAmount);
+			$("#Amount2").append(total);
 			$(".Amount2").show();
 
-			$("#Amount2").append(totalAmount);
+			$("#Amount2").append(total);
 		} else {
-			alert(customerName + ": Your total bill is Ksh. " + totalAmount + ". Your order will be ready for collection in the next one hours");
+			alert(customerName + ": Your total bill is Ksh. " + total + ". Your order will be ready for collection in the next one hours");
 		}
 	});
 
@@ -197,9 +200,9 @@ $(document).ready(function () {
 		$("#checkout").hide();
 		$(".location").hide();
 		$("#Amount2").empty();
-		$("#Amount2").append(totalAmount);
+		$("#Amount2").append(total);
 		$(".Amount2").show();
-		alert(customerName + ": Your total bill is Ksh. " + totalAmount + ". Your order will be delivered to " + estate + ", " + houseNumber + " in the next one hours");
+		alert(customerName + ": Your total bill is Ksh. " + total + ". Your order will be delivered to " + estate + ", " + houseNumber + " in the next one hours");
 	});
 
 
