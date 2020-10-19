@@ -41,6 +41,16 @@ $(document).ready(function () {
 					}
 			}
 	}
+	pizaa.prototype.myCrustPrice = function () {
+	if(this.crust === "crispy") {
+		return 150
+	} else 
+	if(this.crust === "stuff"){
+		return 200
+	}else{
+		return 250
+	}	
+	}
 	pizaa.prototype.mySizePrize = function () {
 		if (this.crust === "crispy") {
 			if (this.size === "small") {
@@ -76,7 +86,7 @@ $(document).ready(function () {
 		}
 	}
 	pizaa.prototype.totalprice = function () {
-		return this.myToppingPrice() + this.mySizePrize()
+		return this.myToppingPrice() + this.mySizePrize() + this.myCrustPrice()
 	}
 	// total = newOder.totalprice();
 
@@ -102,7 +112,7 @@ $(document).ready(function () {
 
 			newPizza.crust +
 			"  @ " +
-			// newPizza.myCrustPrice() +
+			newPizza.myCrustPrice() +
 			"</th>" +
 			"<td>" +
 			newPizza.topping +
@@ -115,7 +125,7 @@ $(document).ready(function () {
 			newPizza.mySizePrize() +
 			"</td>" +
 			"<td>" +
-			newPizza.mySizePrize() +
+			newPizza.totalprice() +
 			"</td>" +
 			"</tr>"
 		);
