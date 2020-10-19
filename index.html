@@ -27,164 +27,160 @@
     </ul>
     <section>
       <div id="home">
-         <div class="row " style="padding-top: 20%; padding-bottom: 10%;padding-left: 4%;">
-           <div class="col-4 text-center">
-             <img src="./images/mash.jpeg" alt="" height="70% " width="70%" >
-             <p><b>Mashroomed pizaa</b></p>
-           </div>
-           <div class="col-4 text-center">
-             <img src="./images/onion.jpeg" alt="" height="70% " width="70%">
-             <p><b>Onion pizaa</b></p>
-           </div>
-           <div class="col-4 text-center">
-             <img src="./images/pepperoni .jpg" alt="" height="70% " width="70%">
-             <p> <b>Peperoni pizaa</b></p>
-           </div>
-         </div>
-          
-          <div class="row">
-            <div class="col-md-6">
-          <div id="odder">
-            <form id="type">
-              <div class="form-group">
-                <label for="">choose your crust</label>
-                 <select class="form-control" id="crust1"> 
-                  <option value=""></option>  
-                  <option value="crispy">Crispy</option>
-                  <option value`="stuff">Stuffed</option>
-                  <option value="gulen">Gluten-free</option>
-                  
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1">choose your toppings</label>
-                <select class="form-control" id="topping1">
-                  <option value=""></option>
-                  <option value="pepe">peperoni</option>
-                  <option value="mash">mashroom</option>
-                  <option value="onion">onion</option>
-                 
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1">pick your size</label>
-                <select class="form-control" id="size1">
-                  <option value=""></option>
-                  <option value="small">small</option>
-                  <option value="medium">medium</option>
-                  <option value="large">large</option>
-                  
-                </select>
-              </div>
-              <button type="submit" class="btn btn-primary">Procced</button>
-            </form>
-
+        <div class="row " style="padding-top: 20%; padding-bottom: 10%;padding-left: 4%;">
+          <div class="col-4 text-center">
+            <img src="./images/mash.jpeg" alt="" height="70% " width="70%">
+            <p><b>Mashroomed pizaa</b></p>
+          </div>
+          <div class="col-4 text-center">
+            <img src="./images/onion.jpeg" alt="" height="70% " width="70%">
+            <p><b>Onion pizaa</b></p>
+          </div>
+          <div class="col-4 text-center">
+            <img src="./images/pepperoni .jpg" alt="" height="70% " width="70%">
+            <p> <b>Peperoni pizaa</b></p>
           </div>
         </div>
-        
-        <div class="col-md-6">
-          
+
+        <div class="row">
+          <div class="col-md-6">
+            <div id="odder">
+              <form id="type">
+                <div class="form-group">
+                  <label for="">choose your crust</label>
+                  <select class="form-control" id="crust1">
+                    <option value=""></option>
+                    <option value="crispy">Crispy</option>
+                    <option value="stuff">Stuffed</option>
+                    <option value="gulen">Gluten-free</option>
+
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">choose your toppings</label>
+                  <select class="form-control" id="topping1">
+                    <option value=""></option>
+                    <option value="pepe">peperoni</option>
+                    <option value="mash">mashroom</option>
+                    <option value="onion">onion</option>
+
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">pick your size</label>
+                  <select class="form-control" id="size1">
+                    <option value=""></option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+ 
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary" >proceed</button>
+              </form>
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+
             <table class="table">
               <thead>
                 <tr>
                   <th scope="col">Toppings</th>
                   <th scope="col">size</th>
                   <th scope="col">total</th>
-                 
-                </tr>
-              </thead>
+                  <thead>
               <tbody id="table">
-                
+
               </tbody>
             </table>
-          
-        </div>
+
           </div>
- <p class="delivery-cost hidden">
-                                Delivery: Ksh. <span id="delivery-amount"></span>
-                            </p>
-                            <p class="Amount2 hidden">
-                                Total: Ksh. <span id="Amount2"></span>
-                            </p>
-                            <br /><br />
-                            <button class="btn btn-primary hidden" id="Procced">Proceed</button>
-                        </div>
-                    </div>
-                    <div class="checkout-options hidden">
-                        <h3>Checkout Form</h3>
-                        <form id="proceed-forms">
-                            <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter Your Name"
-                                    required />
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Delivery Option</label>
-                                <select class="form-control" id="option1" required>
-                                    <option value="">...</option>
-                                    <option value="deliver">Deliver</option>
-                                    <option value="collect">Collect</option>
-                                </select>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-
-                    <div class="location hidden">
-                        <form class="location-form">
-                            <h3>Enter Location</h3>
-                            <div class="form-group">
-                                <label>Estate</label>
-                                <input type="text" class="form-control" id="estate" placeholder="Enter Your location"
-                                    required />
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">House Number</label>
-                                <input type="text" class="form-control" id="house-number" placeholder="Enter Your House Numper"
-                                    required />
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-
-                    </div>
-                </div>
-
-            </div>
-
         </div>
-
-    </section>
-    <section id="about">
-      <h2>About Us</h2>
-      <p> we hhh</p>
-    </section>
-    <section id="contact">
-      <p> Contact Us</p>
-      <form>
-        <div class="form-group">
-          <label for="">Your Name</label>
-          <input type="text" class="form-control" id="name" placeholder="">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">subject</label>
-          <input type="text" class="form-control" id="subject" placeholder="">
-        </div>
-
-        <div class="form-group">
-          <div class="form-group"></div>
-          <label for="exampleFormControlTextarea1">Your massage</label>
-          <textarea class="form-control" id="massage" rows="5"></textarea>
-        </div>
-      </form>
-    </section>
+        <p class="delivery-cost hidden">
+          Delivery: Ksh. <span id="delivery-amount"></span>
+        </p>
+        <p class="Amount2 hidden">
+          Total: Ksh. <span id="Amount2"></span>
+        </p>
+        <br /><br />
+        <button class="btn btn-primary hidden" id="Procced">Proceed</button>
+      </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <div class="checkout-options hidden">
+    <h3>Checkout Form</h3>
+    <form id="proceed-forms">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Delivery Option</label>
+        <select class="form-control" id="option1" required>
+          <option value="">...</option>
+          <option value="deliver">Deliver</option>
+          <option value="collect">Collect</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="location hidden">
+    <form class="location-form">
+      <h3>Enter Location</h3>
+      <div class="form-group">
+        <label>Estate</label>
+        <input type="text" class="form-control" id="estate" placeholder="Enter Your location" required />
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">House Number</label>
+        <input type="text" class="form-control" id="house-number" placeholder="Enter Your House Numper" required />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+  </div>
+
+  </div>
+
+  </div>
+
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p> we hhh</p>
+  </section>
+  <section id="contact">
+    <p> Contact Us</p>
+    <form>
+      <div class="form-group">
+        <label for="">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">subject</label>
+        <input type="text" class="form-control" id="subject" placeholder="">
+      </div>
+
+      <div class="form-group">
+        <div class="form-group"></div>
+        <label for="exampleFormControlTextarea1">Your massage</label>
+        <textarea class="form-control" id="massage" rows="5"></textarea>
+      </div>
+    </form>
+  </section>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
 </body>
 
