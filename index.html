@@ -30,7 +30,10 @@
   </nav>
     <section>
       <div id="home">
-        <div class="row " style="padding-top: 20%; padding-bottom: 10%;padding-left: 4%;">
+        <div id="menu" style="padding-top: 20%; padding-bottom: 10%;padding-left: 4%;">
+        <h1 class="text-center " ">Menu</h1>
+        
+        <div class="row ">
           <div class="col-4 text-center">
             <img src="./images/mash.jpeg" alt="" height="70% " width="70%">
             <p><b>Mashroomed pizaa</b></p>
@@ -44,6 +47,8 @@
             <p> <b>Peperoni pizaa</b></p>
           </div>
         </div>
+        </div>
+      </div>
 
         <div class="row">
           
@@ -53,7 +58,7 @@
               <form id="type">
                 <div class="form-group">
                   <label for="">choose your crust</label>
-                  <select class="form-control" id="crust1">
+                  <select class="form-control" id="crust1" required>
                     <option value=""></option>
                     <option value="crispy">Crispy</option>
                     <option value="stuff">Stuffed</option>
@@ -63,7 +68,7 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">choose your toppings</label>
-                  <select class="form-control" id="topping1">
+                  <select class="form-control" id="topping1" required>
                     <option value=""></option>
                     <option value="pepe">peperoni</option>
                     <option value="mash">mashroom</option>
@@ -73,7 +78,7 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">pick your size</label>
-                  <select class="form-control" id="size1">
+                  <select class="form-control" id="size1" required>
                     <option value=""></option>
                     <option value="small">small</option>
                     <option value="medium">medium</option>
