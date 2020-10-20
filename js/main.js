@@ -17,7 +17,7 @@ $(document).ready(function () {
 					return 200
 				} else {
 					return 250
-				}
+				};
 
 
 		} else
@@ -29,7 +29,7 @@ $(document).ready(function () {
 						return 220
 					} else {
 						return 270
-					}
+					};
 			} else {
 				if (this.topping === "pepe") {
 					return 170
@@ -38,9 +38,9 @@ $(document).ready(function () {
 						return 220
 					} else {
 						return 270
-					}
-			}
-	}
+					};
+			};
+	};
 	pizaa.prototype.myCrustPrice = function () {
 	if(this.crust === "crispy") {
 		return 150
@@ -49,8 +49,8 @@ $(document).ready(function () {
 		return 200
 	}else{
 		return 250
-	}	
-	}
+	};	
+	};
 	pizaa.prototype.mySizePrize = function () {
 		if (this.crust === "crispy") {
 			if (this.size === "small") {
@@ -60,7 +60,7 @@ $(document).ready(function () {
 					return 200
 				} else {
 					return 300
-				}
+				};
 
 
 		} else if (this.crust === "Stuff") {
@@ -71,7 +71,7 @@ $(document).ready(function () {
 					return 200
 				} else {
 					return 300
-				}
+				};
 
 
 		} else {
@@ -82,12 +82,12 @@ $(document).ready(function () {
 					return 200
 				} else {
 					return 200
-				}
-		}
-	}
+				};
+		};
+	};
 	pizaa.prototype.totalprice = function () {
 		return this.myToppingPrice() + this.mySizePrize() + this.myCrustPrice()
-	}
+	};
 	// total = newOder.totalprice();
 
 
@@ -98,8 +98,12 @@ $(document).ready(function () {
 		var crust2 = $("#crust1").val();
 		var topping2 = $("#topping1").val();
 		var size2 = $("#size1").val();
-		var newPizzaOder = new pizaa(crust2, topping2, size2)
-		newOder.push(newPizzaOder.totalprice())
+		var newPizzaOder = new pizaa(crust2, topping2, size2);
+		newOder.push(newPizzaOder.totalprice());
+		$("#crust1").val("");
+		$("#topping1").val("");
+		$("#size1").val("");
+		
 		// console.log('pizza price', newPizzaOder.totalprice());
 		// console.log('jjjjjjjj')
 		// console.log(newOder)
@@ -138,8 +142,8 @@ $(document).ready(function () {
 		if (newOder.length > 0) {
 			$("#form-title").empty();
 			$("#form-title").append("Add Another Order");
-			console.log(newOder)
-			console.log("Nothing!!!")
+			// console.log(newOder)
+			// console.log("Nothing!!!")
 		}
 
 		$("#Amount2").fadeIn();
@@ -164,7 +168,7 @@ $(document).ready(function () {
 
 	$("#proceed-forms").submit(function(event) {
 		event.preventDefault();
-		event.stopPropagation()
+		event.stopPropagation();
 		var name = $("#name1").val();
 		var deliveryOption = $("#option1").val();
 		// console.log(name)
