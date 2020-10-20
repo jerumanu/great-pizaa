@@ -19,10 +19,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link aisabled="true">Disabled</active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Menu</a>
-          <a class="nav-item nav-link" href="#">About us</a>
-          <a class="nav-item nav-link" href="#">Contact us</a>
+          <!-- <a class="nav-item nav-link  href="#home">Home </a> -->
+          <a class="nav-item nav-link" href="#home">Home</a>
+          <a class="nav-item nav-link" href="#menu">Menu</a>
+          <a class="nav-item nav-link" href="#about">About us</a>
+          <a class="nav-item nav-link" href="#contact">Contact us</a>
          
         </div>
       </div>
@@ -174,7 +175,7 @@
   </section>
   <section id="contact">
     <p> Contact Us</p>
-    <form>
+    <form action="http://eepurl.com/hfJ-dP" method="POST">
       <div class="form-group">
         <label for="">Your Name</label>
         <input type="text" class="form-control" id="name" placeholder="">
@@ -193,6 +194,8 @@
         <label for="exampleFormControlTextarea1">Your massage</label>
         <textarea class="form-control" id="massage" rows="5"></textarea>
       </div>
+
+      <button type="submit" class="btn btn-primary">Send</button>
     </form>
   </section>
   </div>
