@@ -167,8 +167,8 @@ $(document).ready(function () {
 		event.stopPropagation()
 		var name = $("#name1").val();
 		var deliveryOption = $("#option1").val();
-		console.log(name)
-		// customerName = name;
+		// console.log(name)
+		customerName = name;
 		$("#name1").val("");
 		$("#option1").val("");
 		$(".checkout-options").hide();
@@ -179,13 +179,13 @@ $(document).ready(function () {
 			$(".delivery-cost").show();
 			$("#Amount2").empty();
 			$("#delivery-amount").append(200);
-			total +=200;
+			total += 200;
 			$("#Amount2").empty();
 			$("#Amount2").empty();
 			$("#Amount2").append(total);
 			$(".Amount2").show();
 
-			$("#Amount2").append(total);
+			
 		} else {
 			alert(customerName + ": Your total bill is Ksh. " + total + ". Your order will be ready for collection in the next one hours");
 		}
